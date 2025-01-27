@@ -27,6 +27,33 @@ body,
 
 @media (min-width: 1280px) {
   .custom-grid-rows {
-    grid-template-rows: repeat(8, 7.5vh);
+    grid-template-rows: repeat(8, 10.5vh);
   }
+}
+
+/* Apply custom scrollbar styles */
+.custom-scrollbar {
+  overflow-y: scroll; /* Enables vertical scrollbar */
+  scrollbar-width: thin; /* For Firefox: thin scrollbar */
+  scrollbar-color: #888 #f1f1f1; /* Thumb (dark grey) and Track (light grey) */
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari, etc.) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px; /* Slim scrollbar width */
+  height: 6px; /* Optional: Slim horizontal scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+  border-radius: 10px; /* Rounded corners for track */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; /* Thumb color */
+  border-radius: 10px; /* Rounded corners for thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker thumb on hover */
 }
