@@ -61,7 +61,7 @@ export const api = createApi({
 
   reducerPath: "api",
 
-  tagTypes: ["DashboardMetrics", "Products", "Users"],
+  tagTypes: ["DashboardMetrics", "Products", "Users", "Expenses"],
 
   endpoints: (build) => ({
     // ============================ DASHBOARD ============================
@@ -98,6 +98,13 @@ export const api = createApi({
       query: () => "/users",
       providesTags: ["Users"],
     }),
+
+    // ============================ EXPENSES ============================
+
+    getExpensesByCategory: build.query<ExpenseByCategorySummary[], void>({
+      query: () => "/expenses",
+      providesTags: ["Expenses"],
+    }),
   }),
 });
 
@@ -106,4 +113,5 @@ export const {
   useGetProductsQuery,
   useCreateProductMutation,
   useGetUsersQuery,
+  useGetExpensesByCategoryQuery,
 } = api;
