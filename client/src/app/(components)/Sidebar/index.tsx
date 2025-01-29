@@ -83,7 +83,7 @@ const Sidebar = () => {
       >
         <Image
           src="/inventory-management.png"
-          alt="edstock-logo"
+          alt="Dstock-logo"
           width={27}
           height={27}
           className="rounded w-8"
