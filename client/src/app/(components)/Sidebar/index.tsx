@@ -12,6 +12,7 @@ import {
   User2Icon,
   X,
 } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -80,7 +81,13 @@ const Sidebar = () => {
           isSidebarCollapsed ? "px-5" : "px-8"
         }`}
       >
-        <div className="">logo</div>
+        <Image
+          src="/inventory-management.png"
+          alt="edstock-logo"
+          width={27}
+          height={27}
+          className="rounded w-8"
+        />
 
         <h1
           className={`font-extrabold text-2xl ${

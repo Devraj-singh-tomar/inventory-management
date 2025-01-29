@@ -68,11 +68,11 @@ const Navbar = () => {
             <Image
               src="/image.png"
               alt="Profile"
-              width={50}
-              height={50}
+              width={45}
+              height={45}
               className="rounded-full h-full object-cover"
             />
-            <span className="font-semibold">Ed Roh</span>
+            <span className="font-semibold">Devraj</span>
           </div>
         </div>
 
